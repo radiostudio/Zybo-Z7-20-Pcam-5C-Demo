@@ -1,0 +1,239 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'DebayerRandBatG'" level="0">
+<item name = "Date">Wed Nov  8 15:31:19 2023
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.67 ns, 5.091 ns, 1.80 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">14, 138434, 93.338 ns, 0.923 ms, 14, 138434, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_DebayerRandBatG_Pipeline_VITIS_LOOP_881_2_fu_258">DebayerRandBatG_Pipeline_VITIS_LOOP_881_2, 9, 189, 60.003 ns, 1.260 us, 9, 189, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_878_1">12, 138432, 12 ~ 192, -, -, 1 ~ 721, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 154, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 7052, 6786, -</column>
+<column name="Memory">8, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 76, -</column>
+<column name="Register">-, -, 836, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 0, 7, 13, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_DebayerRandBatG_Pipeline_VITIS_LOOP_881_2_fu_258">DebayerRandBatG_Pipeline_VITIS_LOOP_881_2, 0, 0, 7052, 6786, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="lineBuffer_U">DebayerRandBatG_lineBuffer_RAM_AUTO_1R1W, 4, 0, 0, 0, 181, 120, 1, 21720</column>
+<column name="lineBuffer_2_U">DebayerRandBatG_lineBuffer_RAM_AUTO_1R1W, 4, 0, 0, 0, 181, 120, 1, 21720</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln878_1_fu_396_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln878_fu_381_p2">+, 0, 0, 13, 10, 2</column>
+<column name="loopHeight_fu_357_p2">+, 0, 0, 13, 10, 1</column>
+<column name="y_6_fu_420_p2">+, 0, 0, 13, 10, 1</column>
+<column name="cmp310_1_i_fu_578_p2">icmp, 0, 0, 20, 15, 15</column>
+<column name="cmp310_i_fu_573_p2">icmp, 0, 0, 20, 15, 15</column>
+<column name="cmp478_i_fu_562_p2">icmp, 0, 0, 13, 10, 1</column>
+<column name="cmp59_i_fu_568_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="icmp_ln878_fu_415_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_i_fu_547_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor309_1_i_fu_402_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_i_fu_557_p2">xor, 0, 0, 15, 15, 15</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">31, 6, 1, 6</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="bayerPhase_c_blk_n">9, 2, 1, 2</column>
+<column name="imgRB_read">9, 2, 1, 2</column>
+<column name="imgRgb_write">9, 2, 1, 2</column>
+<column name="y_fu_72">9, 2, 10, 20</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln878_1_reg_855">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="cmp310_1_i_reg_1078">1, 0, 1, 0</column>
+<column name="cmp310_i_reg_1073">1, 0, 1, 0</column>
+<column name="cmp478_i_reg_1063">1, 0, 1, 0</column>
+<column name="cmp59_i_reg_1068">1, 0, 1, 0</column>
+<column name="grp_DebayerRandBatG_Pipeline_VITIS_LOOP_881_2_fu_258_ap_start_reg">1, 0, 1, 0</column>
+<column name="loopHeight_reg_840">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_01166_31936_lcssa2033_i_fu_76">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_01166_31936_lcssa2033_i_load_reg_868">10, 0, 10, 0</column>
+<column name="p_0_1_0_0_01167_31939_lcssa2035_i_fu_80">10, 0, 10, 0</column>
+<column name="p_0_1_0_0_01167_31939_lcssa2035_i_load_reg_873">10, 0, 10, 0</column>
+<column name="p_0_2_0_0_01168_31942_lcssa2037_i_fu_84">10, 0, 10, 0</column>
+<column name="p_0_2_0_0_01168_31942_lcssa2037_i_load_reg_878">10, 0, 10, 0</column>
+<column name="pixBuf_163_fu_200">10, 0, 10, 0</column>
+<column name="pixBuf_163_load_reg_1023">10, 0, 10, 0</column>
+<column name="pixBuf_164_fu_204">10, 0, 10, 0</column>
+<column name="pixBuf_164_load_reg_1028">10, 0, 10, 0</column>
+<column name="pixBuf_165_fu_208">10, 0, 10, 0</column>
+<column name="pixBuf_165_load_reg_1033">10, 0, 10, 0</column>
+<column name="pixBuf_166_fu_212">10, 0, 10, 0</column>
+<column name="pixBuf_166_load_reg_1038">10, 0, 10, 0</column>
+<column name="pixBuf_167_fu_216">10, 0, 10, 0</column>
+<column name="pixBuf_167_load_reg_1043">10, 0, 10, 0</column>
+<column name="pixBuf_168_fu_220">10, 0, 10, 0</column>
+<column name="pixBuf_168_load_reg_1048">10, 0, 10, 0</column>
+<column name="pixBuf_169_fu_224">10, 0, 10, 0</column>
+<column name="pixBuf_169_load_reg_1053">10, 0, 10, 0</column>
+<column name="pixBuf_170_fu_228">10, 0, 10, 0</column>
+<column name="pixBuf_170_load_reg_1058">10, 0, 10, 0</column>
+<column name="pixBuf_fu_196">10, 0, 10, 0</column>
+<column name="pixBuf_load_reg_1018">10, 0, 10, 0</column>
+<column name="pixWindow_304_fu_92">10, 0, 10, 0</column>
+<column name="pixWindow_304_load_reg_888">10, 0, 10, 0</column>
+<column name="pixWindow_305_fu_96">10, 0, 10, 0</column>
+<column name="pixWindow_305_load_reg_893">10, 0, 10, 0</column>
+<column name="pixWindow_306_fu_100">10, 0, 10, 0</column>
+<column name="pixWindow_306_load_reg_898">10, 0, 10, 0</column>
+<column name="pixWindow_307_fu_104">10, 0, 10, 0</column>
+<column name="pixWindow_307_load_reg_903">10, 0, 10, 0</column>
+<column name="pixWindow_308_fu_108">10, 0, 10, 0</column>
+<column name="pixWindow_308_load_reg_908">10, 0, 10, 0</column>
+<column name="pixWindow_309_fu_112">10, 0, 10, 0</column>
+<column name="pixWindow_309_load_reg_913">10, 0, 10, 0</column>
+<column name="pixWindow_310_fu_116">10, 0, 10, 0</column>
+<column name="pixWindow_310_load_reg_918">10, 0, 10, 0</column>
+<column name="pixWindow_311_fu_120">10, 0, 10, 0</column>
+<column name="pixWindow_311_load_reg_923">10, 0, 10, 0</column>
+<column name="pixWindow_312_fu_124">10, 0, 10, 0</column>
+<column name="pixWindow_312_load_reg_928">10, 0, 10, 0</column>
+<column name="pixWindow_313_fu_128">10, 0, 10, 0</column>
+<column name="pixWindow_313_load_reg_933">10, 0, 10, 0</column>
+<column name="pixWindow_314_fu_132">10, 0, 10, 0</column>
+<column name="pixWindow_314_load_reg_938">10, 0, 10, 0</column>
+<column name="pixWindow_315_fu_136">10, 0, 10, 0</column>
+<column name="pixWindow_315_load_reg_943">10, 0, 10, 0</column>
+<column name="pixWindow_316_fu_140">10, 0, 10, 0</column>
+<column name="pixWindow_316_load_reg_948">10, 0, 10, 0</column>
+<column name="pixWindow_317_fu_144">10, 0, 10, 0</column>
+<column name="pixWindow_317_load_reg_953">10, 0, 10, 0</column>
+<column name="pixWindow_318_fu_148">10, 0, 10, 0</column>
+<column name="pixWindow_318_load_reg_958">10, 0, 10, 0</column>
+<column name="pixWindow_319_fu_152">10, 0, 10, 0</column>
+<column name="pixWindow_319_load_reg_963">10, 0, 10, 0</column>
+<column name="pixWindow_320_fu_156">10, 0, 10, 0</column>
+<column name="pixWindow_320_load_reg_968">10, 0, 10, 0</column>
+<column name="pixWindow_321_fu_160">10, 0, 10, 0</column>
+<column name="pixWindow_321_load_reg_973">10, 0, 10, 0</column>
+<column name="pixWindow_322_fu_164">10, 0, 10, 0</column>
+<column name="pixWindow_322_load_reg_978">10, 0, 10, 0</column>
+<column name="pixWindow_323_fu_168">10, 0, 10, 0</column>
+<column name="pixWindow_323_load_reg_983">10, 0, 10, 0</column>
+<column name="pixWindow_324_fu_172">10, 0, 10, 0</column>
+<column name="pixWindow_324_load_reg_988">10, 0, 10, 0</column>
+<column name="pixWindow_325_fu_176">10, 0, 10, 0</column>
+<column name="pixWindow_325_load_reg_993">10, 0, 10, 0</column>
+<column name="pixWindow_326_fu_180">10, 0, 10, 0</column>
+<column name="pixWindow_326_load_reg_998">10, 0, 10, 0</column>
+<column name="pixWindow_327_fu_184">10, 0, 10, 0</column>
+<column name="pixWindow_327_load_reg_1003">10, 0, 10, 0</column>
+<column name="pixWindow_328_fu_188">10, 0, 10, 0</column>
+<column name="pixWindow_328_load_reg_1008">10, 0, 10, 0</column>
+<column name="pixWindow_329_fu_192">10, 0, 10, 0</column>
+<column name="pixWindow_329_load_reg_1013">10, 0, 10, 0</column>
+<column name="pixWindow_fu_88">10, 0, 10, 0</column>
+<column name="pixWindow_load_reg_883">10, 0, 10, 0</column>
+<column name="trunc_ln870_1_i_reg_845">15, 0, 15, 0</column>
+<column name="xor309_1_cast_i_reg_860">1, 0, 15, 14</column>
+<column name="y_fu_72">10, 0, 10, 0</column>
+<column name="zext_ln871_reg_850">1, 0, 15, 14</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, DebayerRandBatG, return value</column>
+<column name="imgRB_dout">in, 120, ap_fifo, imgRB, pointer</column>
+<column name="imgRB_num_data_valid">in, 3, ap_fifo, imgRB, pointer</column>
+<column name="imgRB_fifo_cap">in, 3, ap_fifo, imgRB, pointer</column>
+<column name="imgRB_empty_n">in, 1, ap_fifo, imgRB, pointer</column>
+<column name="imgRB_read">out, 1, ap_fifo, imgRB, pointer</column>
+<column name="imgRgb_din">out, 120, ap_fifo, imgRgb, pointer</column>
+<column name="imgRgb_num_data_valid">in, 3, ap_fifo, imgRgb, pointer</column>
+<column name="imgRgb_fifo_cap">in, 3, ap_fifo, imgRgb, pointer</column>
+<column name="imgRgb_full_n">in, 1, ap_fifo, imgRgb, pointer</column>
+<column name="imgRgb_write">out, 1, ap_fifo, imgRgb, pointer</column>
+<column name="height">in, 10, ap_stable, height, scalar</column>
+<column name="width">in, 10, ap_stable, width, scalar</column>
+<column name="bayerPhase_c_dout">in, 16, ap_fifo, bayerPhase_c, pointer</column>
+<column name="bayerPhase_c_num_data_valid">in, 3, ap_fifo, bayerPhase_c, pointer</column>
+<column name="bayerPhase_c_fifo_cap">in, 3, ap_fifo, bayerPhase_c, pointer</column>
+<column name="bayerPhase_c_empty_n">in, 1, ap_fifo, bayerPhase_c, pointer</column>
+<column name="bayerPhase_c_read">out, 1, ap_fifo, bayerPhase_c, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,4 @@
+2 warnings and 26 errors generated.
+Error while processing D:\Project2023\SG-Extended\ZyboOrg\hw\hw.runs\system_v_demosaic_0_0_synth_1\prj\sol\.autopilot\db\v_demosaic.pp.0.cpp.
+clang-tidy applied 409 of 409 suggested fixes.
+Suppressed 2 warnings (2 with check filters).

@@ -1,0 +1,180 @@
+
+
+================================================================
+== Vitis HLS Report for 'Debayer'
+================================================================
+* Date:           Wed Nov  8 15:31:06 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  5.283 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+-----------+-----+------------+----------+
+    |   Latency (cycles)   |  Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |     max    |    min   |    max    | min |     max    |   Type   |
+    +---------+------------+----------+-----------+-----+------------+----------+
+    |    16466|  1075855393|  0.110 ms|  7.173 sec|   66|  1075855394|  dataflow|
+    +---------+------------+----------+-----------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 7, States = { 1 2 3 4 5 6 7 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.43>
+ST_1 : Operation 8 [1/1] (2.43ns)   --->   "%bayerPhase_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %bayerPhase_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 8 'read' 'bayerPhase_read_2' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%bayerPhase_c9 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 9 'alloca' 'bayerPhase_c9' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%bayerPhase_c = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 10 'alloca' 'bayerPhase_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%imgG = alloca i64 1"   --->   Operation 11 'alloca' 'imgG' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 120> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%imgRB = alloca i64 1"   --->   Operation 12 'alloca' 'imgRB' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 120> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 4.02>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%width_read = read i16 @_ssdm_op_Read.ap_stable.i16, i16 %width" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 13 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.ap_stable.i16, i16 %height" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 14 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln1070 = trunc i16 %width_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 15 'trunc' 'trunc_ln1070' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln1070_1 = trunc i16 %height_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 16 'trunc' 'trunc_ln1070_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (4.02ns)   --->   "%call_ln1071 = call void @DebayerG, i40 %imgBayer, i120 %imgG, i16 %height_read, i16 %width_read, i16 %bayerPhase_read_2, i16 %bayerPhase_c9, i10 %DIV1_TABLE, i18 %DIV2_TABLE" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1071]   --->   Operation 17 'call' 'call_ln1071' <Predicate = true> <Delay = 4.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln1071 = call void @DebayerG, i40 %imgBayer, i120 %imgG, i16 %height_read, i16 %width_read, i16 %bayerPhase_read_2, i16 %bayerPhase_c9, i10 %DIV1_TABLE, i18 %DIV2_TABLE" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1071]   --->   Operation 18 'call' 'call_ln1071' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 4.16>
+ST_4 : Operation 19 [2/2] (4.16ns)   --->   "%call_ln1072 = call void @DebayerRatBorBatR, i120 %imgG, i120 %imgRB, i10 %trunc_ln1070_1, i10 %trunc_ln1070, i16 %bayerPhase_c9, i16 %bayerPhase_c" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 19 'call' 'call_ln1072' <Predicate = true> <Delay = 4.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln1072 = call void @DebayerRatBorBatR, i120 %imgG, i120 %imgRB, i10 %trunc_ln1070_1, i10 %trunc_ln1070, i16 %bayerPhase_c9, i16 %bayerPhase_c" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 20 'call' 'call_ln1072' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 4.16>
+ST_6 : Operation 21 [2/2] (4.16ns)   --->   "%call_ln1073 = call void @DebayerRandBatG, i120 %imgRB, i120 %imgRgb, i10 %trunc_ln1070_1, i10 %trunc_ln1070, i16 %bayerPhase_c" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1073]   --->   Operation 21 'call' 'call_ln1073' <Predicate = true> <Delay = 4.16> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 22 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @bayerPhase_c9_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %bayerPhase_c9, i16 %bayerPhase_c9" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 22 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln1070 = specinterface void @_ssdm_op_SpecInterface, i16 %bayerPhase_c9, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 23 'specinterface' 'specinterface_ln1070' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 24 [1/1] (0.00ns)   --->   "%empty_209 = specchannel i32 @_ssdm_op_SpecChannel, void @bayerPhase_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i16 %bayerPhase_c, i16 %bayerPhase_c" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 24 'specchannel' 'empty_209' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln1070 = specinterface void @_ssdm_op_SpecInterface, i16 %bayerPhase_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 25 'specinterface' 'specinterface_ln1070' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln1070 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_15" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070]   --->   Operation 26 'specdataflowpipeline' 'specdataflowpipeline_ln1070' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @ap_stable_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @ap_stable_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgRgb, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i40 %imgBayer, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "%empty_210 = specchannel i32 @_ssdm_op_SpecChannel, void @imgG_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i120 %imgG, i120 %imgG"   --->   Operation 31 'specchannel' 'empty_210' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgG, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%empty_211 = specchannel i32 @_ssdm_op_SpecChannel, void @imgRB_str, i32 1, void @p_str, void @p_str, i32 2, i32 2, i120 %imgRB, i120 %imgRB"   --->   Operation 33 'specchannel' 'empty_211' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgRB, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln1073 = call void @DebayerRandBatG, i120 %imgRB, i120 %imgRgb, i10 %trunc_ln1070_1, i10 %trunc_ln1070, i16 %bayerPhase_c" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1073]   --->   Operation 35 'call' 'call_ln1073' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln1074 = ret" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1074]   --->   Operation 36 'ret' 'ret_ln1074' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 2.433ns
+The critical path consists of the following:
+	wire read operation ('bayerPhase', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070) on port 'bayerPhase_read' (D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070) [8]  (2.433 ns)
+
+ <State 2>: 4.021ns
+The critical path consists of the following:
+	wire read operation ('width_read', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070) on port 'width' (D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1070) [9]  (0.000 ns)
+	'call' operation 0 bit ('call_ln1071', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1071) to 'DebayerG' [30]  (4.021 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 4.164ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1072', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) to 'DebayerRatBorBatR' [31]  (4.164 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 4.164ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1073', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1073) to 'DebayerRandBatG' [32]  (4.164 ns)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

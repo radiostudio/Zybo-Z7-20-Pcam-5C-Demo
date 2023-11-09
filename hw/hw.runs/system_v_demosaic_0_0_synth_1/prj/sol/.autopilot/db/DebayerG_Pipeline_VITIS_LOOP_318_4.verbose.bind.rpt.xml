@@ -1,0 +1,126 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'DebayerG_Pipeline_VITIS_LOOP_318_4'" level="0">
+<item name = "Date">Wed Nov  8 15:31:00 2023
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.67 ns, 5.283 ns, 1.80 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">28, 16412, 0.187 us, 0.109 ms, 28, 16412, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="tmp_17_cast_abs_r_fu_1567">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_18_cast_abs_r_fu_1572">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_19_cast_abs_r_fu_1577">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_20_cast_abs_r_fu_1582">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_38_cast_abs_r_fu_1587">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_39_cast_abs_r_fu_1592">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_40_cast_abs_r_fu_1597">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_41_cast_abs_r_fu_1602">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_58_cast_abs_r_fu_1607">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_59_cast_abs_r_fu_1612">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_60_cast_abs_r_fu_1617">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_61_cast_abs_r_fu_1622">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_78_cast_abs_r_fu_1627">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_79_cast_abs_r_fu_1632">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_80_cast_abs_r_fu_1637">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_81_cast_abs_r_fu_1642">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_1_cast_abs_r_fu_1647">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_2_cast_abs_r_fu_1652">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_3_cast_abs_r_fu_1657">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_4_cast_abs_r_fu_1662">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_5_cast_abs_r_fu_1667">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_6_cast_abs_r_fu_1672">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_7_cast_abs_r_fu_1677">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_8_cast_abs_r_fu_1682">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_9_cast_abs_r_fu_1687">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_10_cast_abs_r_fu_1692">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_11_cast_abs_r_fu_1697">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_12_cast_abs_r_fu_1702">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_13_cast_abs_r_fu_1707">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_14_cast_abs_r_fu_1712">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_15_cast_abs_r_fu_1717">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_16_cast_abs_r_fu_1722">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_21_cast_abs_r_fu_1727">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_22_cast_abs_r_fu_1732">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_23_cast_abs_r_fu_1737">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_24_cast_abs_r_fu_1742">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_25_cast_abs_r_fu_1747">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_26_cast_abs_r_fu_1752">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_27_cast_abs_r_fu_1757">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_28_cast_abs_r_fu_1762">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_29_cast_abs_r_fu_1767">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_30_cast_abs_r_fu_1772">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_31_cast_abs_r_fu_1777">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_32_cast_abs_r_fu_1782">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_33_cast_abs_r_fu_1787">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_35_cast_abs_r_fu_1792">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_36_cast_abs_r_fu_1797">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_37_cast_abs_r_fu_1802">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_42_cast_abs_r_fu_1807">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_43_cast_abs_r_fu_1812">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_44_cast_abs_r_fu_1817">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_45_cast_abs_r_fu_1822">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_46_cast_abs_r_fu_1827">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_47_cast_abs_r_fu_1832">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_48_cast_abs_r_fu_1837">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_49_cast_abs_r_fu_1842">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_50_cast_abs_r_fu_1847">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_51_cast_abs_r_fu_1852">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_52_cast_abs_r_fu_1857">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_53_cast_abs_r_fu_1862">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_54_cast_abs_r_fu_1867">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_55_cast_abs_r_fu_1872">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_56_cast_abs_r_fu_1877">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_57_cast_abs_r_fu_1882">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_62_cast_abs_r_fu_1887">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_63_cast_abs_r_fu_1892">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_64_cast_abs_r_fu_1897">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_65_cast_abs_r_fu_1902">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_66_cast_abs_r_fu_1907">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_67_cast_abs_r_fu_1912">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_68_cast_abs_r_fu_1917">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_69_cast_abs_r_fu_1922">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_70_cast_abs_r_fu_1927">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_71_cast_abs_r_fu_1932">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_72_cast_abs_r_fu_1937">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_73_cast_abs_r_fu_1942">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_74_cast_abs_r_fu_1947">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_75_cast_abs_r_fu_1952">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_76_cast_abs_r_fu_1957">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="tmp_77_cast_abs_r_fu_1962">abs_r, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_318_4">26, 16410, 27, 1, 1, 1 ~ 16385, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

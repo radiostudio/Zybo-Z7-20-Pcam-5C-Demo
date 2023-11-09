@@ -1,0 +1,98 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 24,196       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 12,606       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  7,600       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  6,802       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  6,688       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  6,862       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  5,614       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  5,624       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  6,295       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  6,405       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  6,272       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  6,253       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  6,178       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  6,178       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  6,023       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  6,158       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------+----------------------+------------------+-----------------+-----------------+-----------------+-----------------+
+| Function                             | Location             | Compile/Link     | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++--------------------------------------+----------------------+------------------+-----------------+-----------------+-----------------+-----------------+
+| + v_demosaic                         | v_demosaic.cpp:89    | 24,196           | 6,688           | 6,405           | 6,178           | 6,158           |
+|  + AXIvideo2MultiBayer               | v_demosaic.cpp:133   |   408            |  213            |  223            |  158            |  142            |
+|     Scalar                           | hls_video_core.h:198 |     5            |                 |                 |                 |                 |
+|     reg<unsigned short>              | x_hls_utils.h:222    |     2 (2 calls)  |    2 (2 calls)  |    2 (2 calls)  |    2 (2 calls)  |    8 (2 calls)  |
+|   + AXIGetBitFields<40, ap_uint<...  | hls_axi_io.h:84      |    74            |                 |                 |                 |                 |
+|      AXIGetBitFields<40, ap_uint<... | hls_axi_io.h:61      |    68            |                 |                 |                 |                 |
+|  + Debayer                           | v_demosaic.cpp:1060  | 20,798           | 5,728           | 5,329           | 5,217           | 5,212           |
+|   + DebayerG                         | v_demosaic.cpp:264   | 12,634           | 2,768           | 2,765           | 2,734           | 2,727           |
+|      Window                          | hls_video_mem.h:66   |     6            |                 |                 |                 |                 |
+|      Scalar                          | hls_video_core.h:198 |    20 (4 calls)  |                 |                 |                 |                 |
+|      LineBuffer                      | hls_video_mem.h:638  |     8            |                 |                 |                 |                 |
+|      getval                          | hls_video_mem.h:848  |    16            |                 |                 |                 |                 |
+|    + insert_bottom                   | hls_video_mem.h:887  |    18            |                 |                 |                 |                 |
+|       insert_top_row                 | hls_video_mem.h:803  |    13            |                 |                 |                 |                 |
+|    + insert                          | hls_video_mem.h:586  |    69 (3 calls)  |                 |                 |                 |                 |
+|       insert_pixel                   | hls_video_mem.h:279  |    54 (3 calls)  |                 |                 |                 |                 |
+|      getval                          | hls_video_mem.h:505  |    16            |                 |                 |                 |                 |
+|    + operator()                      | hls_video_mem.h:514  |   846 (47 calls) |                 |                 |                 |                 |
+|       getval                         | hls_video_mem.h:505  |   752 (47 calls) |                 |                 |                 |                 |
+|      abs                             | std_abs.h:61         |    80 (20 calls) |  320 (80 calls) |  320 (80 calls) |  320 (80 calls) |  320 (80 calls) |
+|   + DebayerRatBorBatR                | v_demosaic.cpp:593   | 4,121            | 1,514           | 1,228           | 1,186           | 1,185           |
+|    + Window                          | hls_video_mem.h:66   |    27            |                 |                 |                 |                 |
+|       Scalar                         | hls_video_core.h:198 |     5            |                 |                 |                 |                 |
+|      Scalar                          | hls_video_core.h:198 |    40 (8 calls)  |                 |                 |                 |                 |
+|      LineBuffer                      | hls_video_mem.h:638  |     8            |                 |                 |                 |                 |
+|      getval                          | hls_video_mem.h:848  |    16            |                 |                 |                 |                 |
+|    + insert_bottom                   | hls_video_mem.h:887  |    18            |                 |                 |                 |                 |
+|       insert_top_row                 | hls_video_mem.h:803  |    13            |                 |                 |                 |                 |
+|    + insert                          | hls_video_mem.h:586  |    69 (3 calls)  |                 |                 |                 |                 |
+|       insert_pixel                   | hls_video_mem.h:279  |    54 (3 calls)  |                 |                 |                 |                 |
+|    + operator()                      | hls_video_mem.h:514  |   108 (6 calls)  |                 |                 |                 |                 |
+|       getval                         | hls_video_mem.h:505  |    96 (6 calls)  |                 |                 |                 |                 |
+|      abs                             | std_abs.h:61         |    16 (4 calls)  |                 |                 |                 |                 |
+|   + DebayerRandBatG                  | v_demosaic.cpp:841   | 4,017            | 1,430           | 1,328           | 1,289           | 1,288           |
+|    + Window                          | hls_video_mem.h:66   |    27            |                 |                 |                 |                 |
+|       Scalar                         | hls_video_core.h:198 |     5            |                 |                 |                 |                 |
+|      Scalar                          | hls_video_core.h:198 |    40 (8 calls)  |                 |                 |                 |                 |
+|      LineBuffer                      | hls_video_mem.h:638  |     8            |                 |                 |                 |                 |
+|      getval                          | hls_video_mem.h:848  |    16            |                 |                 |                 |                 |
+|    + insert_bottom                   | hls_video_mem.h:887  |    18            |                 |                 |                 |                 |
+|       insert_top_row                 | hls_video_mem.h:803  |    13            |                 |                 |                 |                 |
+|    + insert                          | hls_video_mem.h:586  |    69 (3 calls)  |                 |                 |                 |                 |
+|       insert_pixel                   | hls_video_mem.h:279  |    54 (3 calls)  |                 |                 |                 |                 |
+|    + operator()                      | hls_video_mem.h:514  |   108 (6 calls)  |                 |                 |                 |                 |
+|       getval                         | hls_video_mem.h:505  |    96 (6 calls)  |                 |                 |                 |                 |
+|      abs                             | std_abs.h:61         |    24 (6 calls)  |                 |                 |                 |                 |
+|  + ZipperRemoval                     | v_demosaic.cpp:1077  | 2,006            |  578            |  621            |  592            |  611            |
+|     Scalar                           | hls_video_core.h:198 |    10 (2 calls)  |                 |                 |                 |                 |
+|  + MultiPixStream2AXIvideo           | v_demosaic.cpp:208   |   928            |  130            |  193            |  172            |  142            |
+|     Scalar                           | hls_video_core.h:198 |     5            |                 |                 |                 |                 |
++--------------------------------------+----------------------+------------------+-----------------+-----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

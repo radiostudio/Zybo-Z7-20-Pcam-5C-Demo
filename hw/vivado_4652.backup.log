@@ -1,0 +1,236 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov  8 12:56:33 2023
+# Process ID: 4652
+# Current directory: D:/Project2023/SG-Extended/ZyboOrg/hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3564 D:\Project2023\SG-Extended\ZyboOrg\hw\hw.xpr
+# Log file: D:/Project2023/SG-Extended/ZyboOrg/hw/vivado.log
+# Journal file: D:/Project2023/SG-Extended/ZyboOrg/hw\vivado.jou
+# Running On: RATNA, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 34010 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project2023/SG-Extended/ZyboOrg/hw/hw.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/ratna/Downloads/Zybo-Z7-20-Pcam-5C-hw.xpr (1)/hw' since last save.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+WARNING: [Project 1-312] File not found as 'D:/Project2023/SG-Extended/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp'; using path 'C:/Users/ratna/Downloads/proj/hw.srcs/utils_1/imports/synth_1/system_wrapper.dcp' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_BayerToRGB_1_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_BayerToRGB_1_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_BayerToRGB_1_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_BayerToRGB_1_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_BayerToRGB_1_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_BayerToRGB_1_0/system_AXI_BayerToRGB_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_GammaCorrection_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_GammaCorrection_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_GammaCorrection_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_GammaCorrection_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_AXI_GammaCorrection_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_AXI_GammaCorrection_0_0/system_AXI_GammaCorrection_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DVIClocking_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DVIClocking_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DVIClocking_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DVIClocking_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_DVIClocking_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_DVIClocking_0_0/system_DVIClocking_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_CSI_2_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_CSI_2_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_CSI_2_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_CSI_2_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_CSI_2_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_CSI_2_RX_0_0/system_MIPI_CSI_2_RX_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_D_PHY_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_D_PHY_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_D_PHY_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_D_PHY_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_MIPI_D_PHY_RX_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_MIPI_D_PHY_RX_0_0/system_MIPI_D_PHY_RX_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_processing_system7_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rgb2dvi_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rgb2dvi_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rgb2dvi_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rgb2dvi_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rgb2dvi_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_0_0/system_rgb2dvi_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_clk_wiz_0_50M_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_clk_wiz_0_50M_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_clk_wiz_0_50M_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_clk_wiz_0_50M_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_clk_wiz_0_50M_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_clk_wiz_0_50M_0/system_rst_clk_wiz_0_50M_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_vid_clk_dyn_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_vid_clk_dyn_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_vid_clk_dyn_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_vid_clk_dyn_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_rst_vid_clk_dyn_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_rst_vid_clk_dyn_0/system_rst_vid_clk_dyn_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_1' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_1' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_1' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_1' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_1' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_vdma_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_vdma_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_vdma_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_vdma_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_axi_vdma_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_clk_wiz_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_clk_wiz_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_clk_wiz_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_clk_wiz_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_clk_wiz_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xbar_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xbar_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xbar_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xbar_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_xbar_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_2' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_2' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_2' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_2' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_auto_pc_2' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_v_axi4s_vid_out_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_v_axi4s_vid_out_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_v_axi4s_vid_out_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_v_axi4s_vid_out_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_v_axi4s_vid_out_0_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_video_dynclk_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_video_dynclk_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_video_dynclk_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_video_dynclk_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_video_dynclk_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_video_dynclk_0/system_video_dynclk_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_vtg_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_vtg_0/system_vtg_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_vtg_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_vtg_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_vtg_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_vtg_0' generated file not found 'd:/Project2023/SG-Extended/ZyboOrg/hw/hw.gen/sources_1/bd/system/ip/system_vtg_0/system_vtg_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1688.324 ; gain = 452.242
+reset_run system_AXI_BayerToRGB_1_0_synth_1
+reset_run system_processing_system7_0_0_synth_1
+reset_run system_AXI_GammaCorrection_0_0_synth_1
+reset_run system_rgb2dvi_0_0_synth_1
+reset_run system_DVIClocking_0_0_synth_1
+reset_run system_MIPI_CSI_2_RX_0_0_synth_1
+reset_run system_MIPI_D_PHY_RX_0_0_synth_1
+reset_run system_rst_clk_wiz_0_50M_0_synth_1
+reset_run system_rst_vid_clk_dyn_0_synth_1
+reset_run system_axi_vdma_0_0_synth_1
+reset_run system_clk_wiz_0_0_synth_1
+reset_run system_v_axi4s_vid_out_0_0_synth_1
+reset_run system_video_dynclk_0_synth_1
+reset_run system_vtg_0_synth_1
+reset_run system_xbar_0_synth_1
+reset_run system_auto_pc_0_synth_1
+reset_run system_auto_pc_2_synth_1
+reset_run system_auto_pc_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_AXI_BayerToRGB_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_AXI_GammaCorrection_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_DVIClocking_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_MIPI_CSI_2_RX_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_MIPI_D_PHY_RX_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_pc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_auto_pc_2
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_axi_vdma_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rgb2dvi_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rst_clk_wiz_0_50M_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_rst_vid_clk_dyn_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_v_axi4s_vid_out_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_video_dynclk_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_vtg_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP system_xbar_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_AXI_BayerToRGB_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_AXI_GammaCorrection_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_DVIClocking_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_MIPI_CSI_2_RX_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_vtg_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_MIPI_D_PHY_RX_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rgb2dvi_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_clk_wiz_0_50M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_v_axi4s_vid_out_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_auto_pc_2
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_xbar_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_axi_vdma_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_rst_vid_clk_dyn_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_video_dynclk_0
+[Wed Nov  8 12:57:28 2023] Launched system_AXI_BayerToRGB_1_0_synth_1, system_processing_system7_0_0_synth_1, system_AXI_GammaCorrection_0_0_synth_1, system_rgb2dvi_0_0_synth_1, system_DVIClocking_0_0_synth_1, system_MIPI_CSI_2_RX_0_0_synth_1, system_MIPI_D_PHY_RX_0_0_synth_1, system_rst_clk_wiz_0_50M_0_synth_1, system_rst_vid_clk_dyn_0_synth_1, system_axi_vdma_0_0_synth_1, system_clk_wiz_0_0_synth_1, system_v_axi4s_vid_out_0_0_synth_1, system_video_dynclk_0_synth_1, system_vtg_0_synth_1, system_xbar_0_synth_1, system_auto_pc_0_synth_1, system_auto_pc_2_synth_1, system_auto_pc_1_synth_1...
+Run output will be captured here:
+system_AXI_BayerToRGB_1_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_AXI_BayerToRGB_1_0_synth_1/runme.log
+system_processing_system7_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_processing_system7_0_0_synth_1/runme.log
+system_AXI_GammaCorrection_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_AXI_GammaCorrection_0_0_synth_1/runme.log
+system_rgb2dvi_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_rgb2dvi_0_0_synth_1/runme.log
+system_DVIClocking_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_DVIClocking_0_0_synth_1/runme.log
+system_MIPI_CSI_2_RX_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_MIPI_CSI_2_RX_0_0_synth_1/runme.log
+system_MIPI_D_PHY_RX_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_MIPI_D_PHY_RX_0_0_synth_1/runme.log
+system_rst_clk_wiz_0_50M_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_rst_clk_wiz_0_50M_0_synth_1/runme.log
+system_rst_vid_clk_dyn_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_rst_vid_clk_dyn_0_synth_1/runme.log
+system_axi_vdma_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_axi_vdma_0_0_synth_1/runme.log
+system_clk_wiz_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_clk_wiz_0_0_synth_1/runme.log
+system_v_axi4s_vid_out_0_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_axi4s_vid_out_0_0_synth_1/runme.log
+system_video_dynclk_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_video_dynclk_0_synth_1/runme.log
+system_vtg_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_vtg_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_xbar_0_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_auto_pc_0_synth_1/runme.log
+system_auto_pc_2_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_auto_pc_2_synth_1/runme.log
+system_auto_pc_1_synth_1: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_auto_pc_1_synth_1/runme.log
+[Wed Nov  8 12:57:30 2023] Launched synth_1...
+Run output will be captured here: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1772.398 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 10
+[Wed Nov  8 14:41:48 2023] Launched impl_1...
+Run output will be captured here: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Nov  8 14:45:07 2023] Launched impl_1...
+Run output will be captured here: D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file D:/Project2023/SG-Extended/ZyboOrg/hw/system_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: D:/Project2023/SG-Extended/ZyboOrg/hw/system_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: D:/Project2023/SG-Extended/ZyboOrg/hw/system_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2023.2/data/embeddedsw) loading 0 seconds
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  8 15:15:03 2023...

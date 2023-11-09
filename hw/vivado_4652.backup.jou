@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov  8 12:56:33 2023
+# Process ID: 4652
+# Current directory: D:/Project2023/SG-Extended/ZyboOrg/hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3564 D:\Project2023\SG-Extended\ZyboOrg\hw\hw.xpr
+# Log file: D:/Project2023/SG-Extended/ZyboOrg/hw/vivado.log
+# Journal file: D:/Project2023/SG-Extended/ZyboOrg/hw\vivado.jou
+# Running On: RATNA, OS: Windows, CPU Frequency: 1997 MHz, CPU Physical cores: 14, Host memory: 34010 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project2023/SG-Extended/ZyboOrg/hw/hw.xpr
+reset_run system_AXI_BayerToRGB_1_0_synth_1
+reset_run system_processing_system7_0_0_synth_1
+reset_run system_AXI_GammaCorrection_0_0_synth_1
+reset_run system_rgb2dvi_0_0_synth_1
+reset_run system_DVIClocking_0_0_synth_1
+reset_run system_MIPI_CSI_2_RX_0_0_synth_1
+reset_run system_MIPI_D_PHY_RX_0_0_synth_1
+reset_run system_rst_clk_wiz_0_50M_0_synth_1
+reset_run system_rst_vid_clk_dyn_0_synth_1
+reset_run system_axi_vdma_0_0_synth_1
+reset_run system_clk_wiz_0_0_synth_1
+reset_run system_v_axi4s_vid_out_0_0_synth_1
+reset_run system_video_dynclk_0_synth_1
+reset_run system_vtg_0_synth_1
+reset_run system_xbar_0_synth_1
+reset_run system_auto_pc_0_synth_1
+reset_run system_auto_pc_2_synth_1
+reset_run system_auto_pc_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/Project2023/SG-Extended/ZyboOrg/hw/system_wrapper.xsa

@@ -1,0 +1,180 @@
+{
+    "1": {
+        "name": "Gamma_Pipeline_VITIS_LOOP_315_1",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "315",
+        "instructions": "53",
+        "total_instructions": "53",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1",
+            "T": "3"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "Gamma_Pipeline_VITIS_LOOP_327_4",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "303",
+        "instructions": "67",
+        "total_instructions": "67",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "reg<unsigned short>",
+        "file": "x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "166",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_258_2",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "245",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_width",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "166",
+        "instructions": "46",
+        "total_instructions": "46",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "v_gamma_lut",
+        "file": "v_gamma_lut.cpp",
+        "fileloc": "89",
+        "instructions": "55",
+        "total_instructions": "422",
+        "calls": "9 8 10",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol",
+        "file": "D:\/Project2023\/SG-Extended\/ZyboOrg\/hw\/hw.runs\/system_v_gamma_lut_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_gamma_lut.cpp",
+        "fileloc": "166",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "Gamma",
+        "file": "v_gamma_lut.cpp",
+        "fileloc": "292",
+        "instructions": "41",
+        "total_instructions": "161",
+        "calls": "1 2",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "AXIvideo2MultiPixStream",
+        "file": "v_gamma_lut.cpp",
+        "fileloc": "159",
+        "instructions": "48",
+        "total_instructions": "154",
+        "calls": "3 3 4 6 7",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "MultiPixStream2AXIvideo",
+        "file": "v_gamma_lut.cpp",
+        "fileloc": "236",
+        "instructions": "28",
+        "total_instructions": "52",
+        "calls": "5",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

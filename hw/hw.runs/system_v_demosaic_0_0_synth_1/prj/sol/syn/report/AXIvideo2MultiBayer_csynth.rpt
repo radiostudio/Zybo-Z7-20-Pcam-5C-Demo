@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiBayer'
+================================================================
+* Date:           Wed Nov  8 15:31:10 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  6.091 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+        |                                                             |                                                  |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+        |                           Instance                          |                      Module                      |   min   |   max   |    min    |    max   | min | max |   Type  |
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+        |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_start_fu_142  |AXIvideo2MultiBayer_Pipeline_loop_wait_for_start  |        ?|        ?|          ?|         ?|    ?|    ?|       no|
+        |grp_AXIvideo2MultiBayer_Pipeline_loop_width_fu_162           |AXIvideo2MultiBayer_Pipeline_loop_width           |        2|      182|  13.334 ns|  1.213 us|    2|  182|       no|
+        |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol_fu_190    |AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol    |        ?|        ?|          ?|         ?|    ?|    ?|       no|
+        |grp_reg_unsigned_short_s_fu_221                              |reg_unsigned_short_s                              |        1|        1|   6.667 ns|  6.667 ns|    1|    1|      yes|
+        |grp_reg_unsigned_short_s_fu_242                              |reg_unsigned_short_s                              |        1|        1|   6.667 ns|  6.667 ns|    1|    1|      yes|
+        +-------------------------------------------------------------+--------------------------------------------------+---------+---------+-----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- loop_height  |        ?|        ?|         ?|          -|          -|  0 ~ 720|        no|
+        +---------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     49|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|     104|    270|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    139|    -|
+|Register         |        -|    -|     100|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     204|    458|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+----+-----+-----+
+    |                           Instance                          |                      Module                      | BRAM_18K| DSP| FF | LUT | URAM|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+----+-----+-----+
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol_fu_190    |AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol    |        0|   0|   4|   52|    0|
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_start_fu_142  |AXIvideo2MultiBayer_Pipeline_loop_wait_for_start  |        0|   0|   4|   38|    0|
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_width_fu_162           |AXIvideo2MultiBayer_Pipeline_loop_width           |        0|   0|  54|  152|    0|
+    |grp_reg_unsigned_short_s_fu_221                              |reg_unsigned_short_s                              |        0|   0|  21|   14|    0|
+    |grp_reg_unsigned_short_s_fu_242                              |reg_unsigned_short_s                              |        0|   0|  21|   14|    0|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                        |                                                  |        0|   0| 104|  270|    0|
+    +-------------------------------------------------------------+--------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |i_4_fu_269_p2           |         +|   0|  0|  13|          10|           1|
+    |and_ln188_fu_275_p2     |       and|   0|  0|   2|           1|           1|
+    |cmp10252_fu_250_p2      |      icmp|   0|  0|  15|           8|           1|
+    |icmp_ln163_fu_264_p2    |      icmp|   0|  0|  13|          10|          10|
+    |ap_block_state1         |        or|   0|  0|   2|           1|           1|
+    |select_ln188_fu_292_p3  |    select|   0|  0|   2|           1|           1|
+    |xor_ln188_fu_255_p2     |       xor|   0|  0|   2|           1|           2|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0|  49|          32|          17|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                         |  65|         12|    1|         12|
+    |ap_done                           |   9|          2|    1|          2|
+    |axi_data_2_fu_84                  |   9|          2|   40|         80|
+    |axi_last_2_reg_132                |   9|          2|    1|          2|
+    |i_fu_88                           |   9|          2|   10|         20|
+    |imgBayer_write                    |   9|          2|    1|          2|
+    |s_axis_video_TREADY_int_regslice  |  20|          4|    1|          4|
+    |sof_reg_120                       |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 139|         28|   56|        124|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                   Name                                   | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |and_ln188_reg_376                                                         |   1|   0|    1|          0|
+    |ap_CS_fsm                                                                 |  11|   0|   11|          0|
+    |ap_done_reg                                                               |   1|   0|    1|          0|
+    |axi_data_2_fu_84                                                          |  40|   0|   40|          0|
+    |axi_last_2_reg_132                                                        |   1|   0|    1|          0|
+    |axi_last_4_loc_fu_92                                                      |   1|   0|    1|          0|
+    |cmp10252_reg_363                                                          |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol_fu_190_ap_start_reg    |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_wait_for_start_fu_142_ap_start_reg  |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiBayer_Pipeline_loop_width_fu_162_ap_start_reg           |   1|   0|    1|          0|
+    |i_fu_88                                                                   |  10|   0|   10|          0|
+    |rows_reg_355                                                              |  10|   0|   10|          0|
+    |select_ln188_reg_387                                                      |   1|   0|    1|          0|
+    |sof_reg_120                                                               |   1|   0|    1|          0|
+    |trunc_ln141_1_reg_349                                                     |   8|   0|    8|          0|
+    |trunc_ln145_reg_344                                                       |  10|   0|   10|          0|
+    |xor_ln188_reg_368                                                         |   1|   0|    1|          0|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                     | 100|   0|  100|          0|
+    +--------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-----------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_continue              |   in|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|    AXIvideo2MultiBayer|  return value|
+|s_axis_video_TDATA       |   in|   40|        axis|  s_axis_video_V_data_V|       pointer|
+|s_axis_video_TVALID      |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY      |  out|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TDEST       |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TKEEP       |   in|    5|        axis|  s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB       |   in|    5|        axis|  s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER       |   in|    1|        axis|  s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST       |   in|    1|        axis|  s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID         |   in|    1|        axis|    s_axis_video_V_id_V|       pointer|
+|imgBayer_din             |  out|   40|     ap_fifo|               imgBayer|       pointer|
+|imgBayer_num_data_valid  |   in|    3|     ap_fifo|               imgBayer|       pointer|
+|imgBayer_fifo_cap        |   in|    3|     ap_fifo|               imgBayer|       pointer|
+|imgBayer_full_n          |   in|    1|     ap_fifo|               imgBayer|       pointer|
+|imgBayer_write           |  out|    1|     ap_fifo|               imgBayer|       pointer|
+|Height                   |   in|   16|   ap_stable|                 Height|        scalar|
+|WidthIn                  |   in|   16|   ap_stable|                WidthIn|        scalar|
++-------------------------+-----+-----+------------+-----------------------+--------------+
+

@@ -1,0 +1,273 @@
+
+
+================================================================
+== Vitis HLS Report for 'DebayerRatBorBatR'
+================================================================
+* Date:           Wed Nov  8 15:31:04 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  5.091 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |       17|   140597|  0.113 us|  0.937 ms|   17|  140597|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_630_1  |       15|   140595|  15 ~ 195|          -|          -|  1 ~ 721|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.43>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:603->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 6 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0929_21627_lcssa1755_i = alloca i32 1"   --->   Operation 7 'alloca' 'p_0_0_0_0_0929_21627_lcssa1755_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0930_21630_lcssa1757_i = alloca i32 1"   --->   Operation 8 'alloca' 'p_0_1_0_0_0930_21630_lcssa1757_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0931_21633_lcssa1759_i = alloca i32 1"   --->   Operation 9 'alloca' 'p_0_2_0_0_0931_21633_lcssa1759_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0923_21693_lcssa1767_i = alloca i32 1"   --->   Operation 10 'alloca' 'p_0_0_0_0_0923_21693_lcssa1767_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0924_21696_lcssa1769_i = alloca i32 1"   --->   Operation 11 'alloca' 'p_0_1_0_0_0924_21696_lcssa1769_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0925_21699_lcssa1771_i = alloca i32 1"   --->   Operation 12 'alloca' 'p_0_2_0_0_0925_21699_lcssa1771_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%pixWindow = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 13 'alloca' 'pixWindow' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%pixWindow_141 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 14 'alloca' 'pixWindow_141' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%pixWindow_142 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 15 'alloca' 'pixWindow_142' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%pixWindow_143 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 16 'alloca' 'pixWindow_143' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%pixWindow_144 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 17 'alloca' 'pixWindow_144' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%pixWindow_145 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 18 'alloca' 'pixWindow_145' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%pixWindow_146 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 19 'alloca' 'pixWindow_146' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%pixWindow_147 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 20 'alloca' 'pixWindow_147' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%pixWindow_148 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 21 'alloca' 'pixWindow_148' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%pixWindow_149 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 22 'alloca' 'pixWindow_149' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%pixWindow_150 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 23 'alloca' 'pixWindow_150' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%pixWindow_151 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 24 'alloca' 'pixWindow_151' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%pixWindow_152 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 25 'alloca' 'pixWindow_152' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%pixWindow_153 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 26 'alloca' 'pixWindow_153' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%pixWindow_154 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 27 'alloca' 'pixWindow_154' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%pixWindow_155 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 28 'alloca' 'pixWindow_155' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%pixWindow_156 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 29 'alloca' 'pixWindow_156' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%pixWindow_157 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 30 'alloca' 'pixWindow_157' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%pixWindow_158 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 31 'alloca' 'pixWindow_158' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%pixWindow_159 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 32 'alloca' 'pixWindow_159' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%pixWindow_160 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 33 'alloca' 'pixWindow_160' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%pixWindow_161 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 34 'alloca' 'pixWindow_161' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%pixWindow_162 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 35 'alloca' 'pixWindow_162' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%pixWindow_163 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 36 'alloca' 'pixWindow_163' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%pixWindow_164 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 37 'alloca' 'pixWindow_164' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%pixWindow_165 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 38 'alloca' 'pixWindow_165' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%pixWindow_166 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:609->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 39 'alloca' 'pixWindow_166' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%pixBuf = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 40 'alloca' 'pixBuf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%pixBuf_78 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 41 'alloca' 'pixBuf_78' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%pixBuf_79 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 42 'alloca' 'pixBuf_79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%pixBuf_80 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 43 'alloca' 'pixBuf_80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%pixBuf_81 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 44 'alloca' 'pixBuf_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%pixBuf_82 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 45 'alloca' 'pixBuf_82' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%pixBuf_83 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 46 'alloca' 'pixBuf_83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%pixBuf_84 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 47 'alloca' 'pixBuf_84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%pixBuf_85 = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:612->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 48 'alloca' 'pixBuf_85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (2.43ns)   --->   "%width_read = read i10 @_ssdm_op_Read.ap_stable.i10, i10 %width"   --->   Operation 49 'read' 'width_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%lineBuffer = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:614->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 50 'alloca' 'lineBuffer' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%lineBuffer_1 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:614->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 51 'alloca' 'lineBuffer_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (1.58ns)   --->   "%store_ln603 = store i10 0, i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:603->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 52 'store' 'store_ln603' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 4.86>
+ST_2 : Operation 53 [1/1] (2.43ns)   --->   "%height_read = read i10 @_ssdm_op_Read.ap_stable.i10, i10 %height"   --->   Operation 53 'read' 'height_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bayerPhase_c9, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (2.43ns)   --->   "%bayerPhase_c9_read = read i16 @_ssdm_op_Read.ap_fifo.i16P0A, i16 %bayerPhase_c9"   --->   Operation 55 'read' 'bayerPhase_c9_read' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %bayerPhase_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (2.43ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i16P0A, i16 %bayerPhase_c, i16 %bayerPhase_c9_read"   --->   Operation 57 'write' 'write_ln0' <Predicate = true> <Delay = 2.43> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %width, void @ap_stable_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %height, void @ap_stable_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgRB, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgG, void @empty_24, i32 0, i32 0, void @empty_15, i32 0, i32 0, void @empty_15, void @empty_15, void @empty_15, i32 0, i32 0, i32 0, i32 0, void @empty_15, void @empty_15, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (1.73ns)   --->   "%loopHeight = add i10 %height_read, i10 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:606->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 62 'add' 'loopHeight' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%x_phase = trunc i16 %bayerPhase_c9_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 63 'trunc' 'x_phase' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%trunc_ln622_1_i = partselect i15 @_ssdm_op_PartSelect.i15.i16.i32.i32, i16 %bayerPhase_c9_read, i32 1, i32 15" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 64 'partselect' 'trunc_ln622_1_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln623 = zext i1 %x_phase" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:623->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 65 'zext' 'zext_ln623' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (1.73ns)   --->   "%add_ln630 = add i10 %width_read, i10 3" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 66 'add' 'add_ln630' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%trunc_ln_i = partselect i8 @_ssdm_op_PartSelect.i8.i10.i32.i32, i10 %add_ln630, i32 2, i32 9" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 67 'partselect' 'trunc_ln_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (1.91ns)   --->   "%add_ln630_1 = add i8 %trunc_ln_i, i8 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 68 'add' 'add_ln630_1' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (0.97ns)   --->   "%xor313_1_i = xor i1 %x_phase, i1 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 69 'xor' 'xor313_1_i' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%xor313_1_cast_i = zext i1 %xor313_1_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 70 'zext' 'xor313_1_cast_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln630 = br void %VITIS_LOOP_633_2.i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 71 'br' 'br_ln630' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.91>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%y_3 = load i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 72 'load' 'y_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (1.73ns)   --->   "%icmp_ln630 = icmp_eq  i10 %y_3, i10 %loopHeight" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 73 'icmp' 'icmp_ln630' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 721, i64 0"   --->   Operation 74 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (1.73ns)   --->   "%y_4 = add i10 %y_3, i10 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 75 'add' 'y_4' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln630 = br i1 %icmp_ln630, void %VITIS_LOOP_633_2.split.i, void %DebayerRatBorBatR.exit" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 76 'br' 'br_ln630' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0929_21627_lcssa1755_i_load = load i10 %p_0_0_0_0_0929_21627_lcssa1755_i"   --->   Operation 77 'load' 'p_0_0_0_0_0929_21627_lcssa1755_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0930_21630_lcssa1757_i_load = load i10 %p_0_1_0_0_0930_21630_lcssa1757_i"   --->   Operation 78 'load' 'p_0_1_0_0_0930_21630_lcssa1757_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0931_21633_lcssa1759_i_load = load i10 %p_0_2_0_0_0931_21633_lcssa1759_i"   --->   Operation 79 'load' 'p_0_2_0_0_0931_21633_lcssa1759_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0923_21693_lcssa1767_i_load = load i10 %p_0_0_0_0_0923_21693_lcssa1767_i"   --->   Operation 80 'load' 'p_0_0_0_0_0923_21693_lcssa1767_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0924_21696_lcssa1769_i_load = load i10 %p_0_1_0_0_0924_21696_lcssa1769_i"   --->   Operation 81 'load' 'p_0_1_0_0_0924_21696_lcssa1769_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0925_21699_lcssa1771_i_load = load i10 %p_0_2_0_0_0925_21699_lcssa1771_i"   --->   Operation 82 'load' 'p_0_2_0_0_0925_21699_lcssa1771_i_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%pixWindow_load = load i10 %pixWindow"   --->   Operation 83 'load' 'pixWindow_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%pixWindow_141_load = load i10 %pixWindow_141"   --->   Operation 84 'load' 'pixWindow_141_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%pixWindow_142_load = load i10 %pixWindow_142"   --->   Operation 85 'load' 'pixWindow_142_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%pixWindow_143_load = load i10 %pixWindow_143"   --->   Operation 86 'load' 'pixWindow_143_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%pixWindow_144_load = load i10 %pixWindow_144"   --->   Operation 87 'load' 'pixWindow_144_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%pixWindow_145_load = load i10 %pixWindow_145"   --->   Operation 88 'load' 'pixWindow_145_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 89 [1/1] (0.00ns)   --->   "%pixWindow_146_load = load i10 %pixWindow_146"   --->   Operation 89 'load' 'pixWindow_146_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%pixWindow_147_load = load i10 %pixWindow_147"   --->   Operation 90 'load' 'pixWindow_147_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%pixWindow_148_load = load i10 %pixWindow_148"   --->   Operation 91 'load' 'pixWindow_148_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%pixWindow_149_load = load i10 %pixWindow_149"   --->   Operation 92 'load' 'pixWindow_149_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%pixWindow_150_load = load i10 %pixWindow_150"   --->   Operation 93 'load' 'pixWindow_150_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%pixWindow_151_load = load i10 %pixWindow_151"   --->   Operation 94 'load' 'pixWindow_151_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%pixWindow_152_load = load i10 %pixWindow_152"   --->   Operation 95 'load' 'pixWindow_152_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%pixWindow_153_load = load i10 %pixWindow_153"   --->   Operation 96 'load' 'pixWindow_153_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%pixWindow_154_load = load i10 %pixWindow_154"   --->   Operation 97 'load' 'pixWindow_154_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%pixWindow_155_load = load i10 %pixWindow_155"   --->   Operation 98 'load' 'pixWindow_155_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%pixWindow_156_load = load i10 %pixWindow_156"   --->   Operation 99 'load' 'pixWindow_156_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%pixWindow_157_load = load i10 %pixWindow_157"   --->   Operation 100 'load' 'pixWindow_157_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%pixWindow_158_load = load i10 %pixWindow_158"   --->   Operation 101 'load' 'pixWindow_158_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%pixWindow_159_load = load i10 %pixWindow_159"   --->   Operation 102 'load' 'pixWindow_159_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%pixWindow_160_load = load i10 %pixWindow_160"   --->   Operation 103 'load' 'pixWindow_160_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%pixWindow_161_load = load i10 %pixWindow_161"   --->   Operation 104 'load' 'pixWindow_161_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%pixWindow_162_load = load i10 %pixWindow_162"   --->   Operation 105 'load' 'pixWindow_162_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%pixWindow_163_load = load i10 %pixWindow_163"   --->   Operation 106 'load' 'pixWindow_163_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "%pixWindow_164_load = load i10 %pixWindow_164"   --->   Operation 107 'load' 'pixWindow_164_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%pixWindow_165_load = load i10 %pixWindow_165"   --->   Operation 108 'load' 'pixWindow_165_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "%pixWindow_166_load = load i10 %pixWindow_166"   --->   Operation 109 'load' 'pixWindow_166_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%pixBuf_load = load i10 %pixBuf"   --->   Operation 110 'load' 'pixBuf_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%pixBuf_78_load = load i10 %pixBuf_78"   --->   Operation 111 'load' 'pixBuf_78_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%pixBuf_79_load = load i10 %pixBuf_79"   --->   Operation 112 'load' 'pixBuf_79_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%pixBuf_80_load = load i10 %pixBuf_80"   --->   Operation 113 'load' 'pixBuf_80_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%pixBuf_81_load = load i10 %pixBuf_81"   --->   Operation 114 'load' 'pixBuf_81_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%pixBuf_82_load = load i10 %pixBuf_82"   --->   Operation 115 'load' 'pixBuf_82_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%pixBuf_83_load = load i10 %pixBuf_83"   --->   Operation 116 'load' 'pixBuf_83_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "%pixBuf_84_load = load i10 %pixBuf_84"   --->   Operation 117 'load' 'pixBuf_84_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%pixBuf_85_load = load i10 %pixBuf_85"   --->   Operation 118 'load' 'pixBuf_85_load' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%trunc_ln630 = trunc i10 %y_3" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 119 'trunc' 'trunc_ln630' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (0.97ns)   --->   "%and310_i = xor i1 %trunc_ln630, i1 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 120 'xor' 'and310_i' <Predicate = (!icmp_ln630)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%and310_cast_i = zext i1 %and310_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 121 'zext' 'and310_cast_i' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] (0.99ns)   --->   "%xor_i = xor i15 %trunc_ln622_1_i, i15 %and310_cast_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 122 'xor' 'xor_i' <Predicate = (!icmp_ln630)> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 123 [1/1] (1.94ns)   --->   "%red_i = icmp_eq  i15 %and310_cast_i, i15 %trunc_ln622_1_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 123 'icmp' 'red_i' <Predicate = (!icmp_ln630)> <Delay = 1.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 124 [1/1] (1.73ns)   --->   "%cmp558_i = icmp_ne  i10 %y_3, i10 0" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 124 'icmp' 'cmp558_i' <Predicate = (!icmp_ln630)> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 125 [1/1] (1.73ns)   --->   "%cmp59_i = icmp_ult  i10 %y_3, i10 %height_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 125 'icmp' 'cmp59_i' <Predicate = (!icmp_ln630)> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 126 [1/1] (1.94ns)   --->   "%cmp314_i = icmp_eq  i15 %xor_i, i15 %zext_ln623" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 126 'icmp' 'cmp314_i' <Predicate = (!icmp_ln630)> <Delay = 1.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 127 [1/1] (1.94ns)   --->   "%cmp314_1_i = icmp_eq  i15 %xor_i, i15 %xor313_1_cast_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 127 'icmp' 'cmp314_1_i' <Predicate = (!icmp_ln630)> <Delay = 1.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 128 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 128 'wait' 'empty' <Predicate = (!icmp_ln630)> <Delay = 0.00>
+ST_3 : Operation 129 [1/1] (1.58ns)   --->   "%store_ln603 = store i10 %y_4, i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:603->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 129 'store' 'store_ln603' <Predicate = (!icmp_ln630)> <Delay = 1.58>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%ret_ln1072 = ret" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 130 'ret' 'ret_ln1072' <Predicate = (icmp_ln630)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.50>
+ST_4 : Operation 131 [2/2] (3.50ns)   --->   "%call_ln630 = call void @DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2, i10 %pixBuf_85_load, i10 %pixBuf_84_load, i10 %pixBuf_83_load, i10 %pixBuf_82_load, i10 %pixBuf_81_load, i10 %pixBuf_80_load, i10 %pixBuf_79_load, i10 %pixBuf_78_load, i10 %pixBuf_load, i10 %pixWindow_166_load, i10 %pixWindow_165_load, i10 %pixWindow_164_load, i10 %pixWindow_163_load, i10 %pixWindow_162_load, i10 %pixWindow_161_load, i10 %pixWindow_160_load, i10 %pixWindow_159_load, i10 %pixWindow_158_load, i10 %pixWindow_157_load, i10 %pixWindow_156_load, i10 %pixWindow_155_load, i10 %pixWindow_154_load, i10 %pixWindow_153_load, i10 %pixWindow_152_load, i10 %pixWindow_151_load, i10 %pixWindow_150_load, i10 %pixWindow_149_load, i10 %pixWindow_148_load, i10 %pixWindow_147_load, i10 %pixWindow_146_load, i10 %pixWindow_145_load, i10 %pixWindow_144_load, i10 %pixWindow_143_load, i10 %pixWindow_142_load, i10 %pixWindow_141_load, i10 %pixWindow_load, i10 %p_0_2_0_0_0925_21699_lcssa1771_i_load, i10 %p_0_1_0_0_0924_21696_lcssa1769_i_load, i10 %p_0_0_0_0_0923_21693_lcssa1767_i_load, i10 %p_0_2_0_0_0931_21633_lcssa1759_i_load, i10 %p_0_1_0_0_0930_21630_lcssa1757_i_load, i10 %p_0_0_0_0_0929_21627_lcssa1755_i_load, i8 %add_ln630_1, i120 %imgRB, i1 %cmp558_i, i1 %cmp314_1_i, i1 %cmp314_i, i120 %lineBuffer_1, i120 %lineBuffer, i10 %width_read, i1 %cmp59_i, i120 %imgG, i1 %red_i, i10 %pixBuf_85, i10 %pixBuf_84, i10 %pixBuf_83, i10 %pixBuf_82, i10 %pixBuf_81, i10 %pixBuf_80, i10 %pixBuf_79, i10 %pixBuf_78, i10 %pixBuf, i10 %pixWindow_166, i10 %pixWindow_165, i10 %pixWindow_164, i10 %pixWindow_163, i10 %pixWindow_162, i10 %pixWindow_161, i10 %pixWindow_160, i10 %pixWindow_159, i10 %pixWindow_158, i10 %pixWindow_157, i10 %pixWindow_156, i10 %pixWindow_155, i10 %pixWindow_154, i10 %pixWindow_153, i10 %pixWindow_152, i10 %pixWindow_151, i10 %pixWindow_150, i10 %pixWindow_149, i10 %pixWindow_148, i10 %pixWindow_147, i10 %pixWindow_146, i10 %pixWindow_145, i10 %pixWindow_144, i10 %pixWindow_143, i10 %pixWindow_142, i10 %pixWindow_141, i10 %pixWindow, i10 %p_0_2_0_0_0925_21699_lcssa1771_i, i10 %p_0_1_0_0_0924_21696_lcssa1769_i, i10 %p_0_0_0_0_0923_21693_lcssa1767_i, i10 %p_0_2_0_0_0931_21633_lcssa1759_i, i10 %p_0_1_0_0_0930_21630_lcssa1757_i, i10 %p_0_0_0_0_0929_21627_lcssa1755_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 131 'call' 'call_ln630' <Predicate = true> <Delay = 3.50> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%specloopname_ln630 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 132 'specloopname' 'specloopname_ln630' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 133 [1/2] (0.00ns)   --->   "%call_ln630 = call void @DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2, i10 %pixBuf_85_load, i10 %pixBuf_84_load, i10 %pixBuf_83_load, i10 %pixBuf_82_load, i10 %pixBuf_81_load, i10 %pixBuf_80_load, i10 %pixBuf_79_load, i10 %pixBuf_78_load, i10 %pixBuf_load, i10 %pixWindow_166_load, i10 %pixWindow_165_load, i10 %pixWindow_164_load, i10 %pixWindow_163_load, i10 %pixWindow_162_load, i10 %pixWindow_161_load, i10 %pixWindow_160_load, i10 %pixWindow_159_load, i10 %pixWindow_158_load, i10 %pixWindow_157_load, i10 %pixWindow_156_load, i10 %pixWindow_155_load, i10 %pixWindow_154_load, i10 %pixWindow_153_load, i10 %pixWindow_152_load, i10 %pixWindow_151_load, i10 %pixWindow_150_load, i10 %pixWindow_149_load, i10 %pixWindow_148_load, i10 %pixWindow_147_load, i10 %pixWindow_146_load, i10 %pixWindow_145_load, i10 %pixWindow_144_load, i10 %pixWindow_143_load, i10 %pixWindow_142_load, i10 %pixWindow_141_load, i10 %pixWindow_load, i10 %p_0_2_0_0_0925_21699_lcssa1771_i_load, i10 %p_0_1_0_0_0924_21696_lcssa1769_i_load, i10 %p_0_0_0_0_0923_21693_lcssa1767_i_load, i10 %p_0_2_0_0_0931_21633_lcssa1759_i_load, i10 %p_0_1_0_0_0930_21630_lcssa1757_i_load, i10 %p_0_0_0_0_0929_21627_lcssa1755_i_load, i8 %add_ln630_1, i120 %imgRB, i1 %cmp558_i, i1 %cmp314_1_i, i1 %cmp314_i, i120 %lineBuffer_1, i120 %lineBuffer, i10 %width_read, i1 %cmp59_i, i120 %imgG, i1 %red_i, i10 %pixBuf_85, i10 %pixBuf_84, i10 %pixBuf_83, i10 %pixBuf_82, i10 %pixBuf_81, i10 %pixBuf_80, i10 %pixBuf_79, i10 %pixBuf_78, i10 %pixBuf, i10 %pixWindow_166, i10 %pixWindow_165, i10 %pixWindow_164, i10 %pixWindow_163, i10 %pixWindow_162, i10 %pixWindow_161, i10 %pixWindow_160, i10 %pixWindow_159, i10 %pixWindow_158, i10 %pixWindow_157, i10 %pixWindow_156, i10 %pixWindow_155, i10 %pixWindow_154, i10 %pixWindow_153, i10 %pixWindow_152, i10 %pixWindow_151, i10 %pixWindow_150, i10 %pixWindow_149, i10 %pixWindow_148, i10 %pixWindow_147, i10 %pixWindow_146, i10 %pixWindow_145, i10 %pixWindow_144, i10 %pixWindow_143, i10 %pixWindow_142, i10 %pixWindow_141, i10 %pixWindow, i10 %p_0_2_0_0_0925_21699_lcssa1771_i, i10 %p_0_1_0_0_0924_21696_lcssa1769_i, i10 %p_0_0_0_0_0923_21693_lcssa1767_i, i10 %p_0_2_0_0_0931_21633_lcssa1759_i, i10 %p_0_1_0_0_0930_21630_lcssa1757_i, i10 %p_0_0_0_0_0929_21627_lcssa1755_i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 133 'call' 'call_ln630' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 134 [1/1] (0.00ns)   --->   "%br_ln630 = br void %VITIS_LOOP_633_2.i" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072]   --->   Operation 134 'br' 'br_ln630' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 2.433ns
+The critical path consists of the following:
+	wire read operation ('width_read') on port 'width' [50]  (2.433 ns)
+
+ <State 2>: 4.867ns
+The critical path consists of the following:
+	fifo read operation ('bayerPhase_c9_read') on port 'bayerPhase_c9' [55]  (2.433 ns)
+	fifo write operation ('write_ln0') on port 'bayerPhase_c' [57]  (2.433 ns)
+
+ <State 3>: 3.912ns
+The critical path consists of the following:
+	'load' operation 10 bit ('y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) on local variable 'y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:603->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072 [74]  (0.000 ns)
+	'xor' operation 1 bit ('and310_i', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) [124]  (0.978 ns)
+	'xor' operation 15 bit ('xor_i', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) [126]  (0.990 ns)
+	'icmp' operation 1 bit ('cmp314_i', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:622->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) [130]  (1.944 ns)
+
+ <State 4>: 3.503ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln630', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:630->D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:1072) to 'DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2' [133]  (3.503 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

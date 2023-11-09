@@ -1,0 +1,185 @@
+
+
+================================================================
+== Vitis HLS Report for 'Gamma'
+================================================================
+* Date:           Wed Nov  8 16:03:31 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  6.67 ns|  4.907 ns|     1.80 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+----------+-----------+------+----------+---------+
+    |  Latency (cycles)  |  Latency (absolute)  |     Interval    | Pipeline|
+    |   min   |    max   |    min   |    max    |  min |    max   |   Type  |
+    +---------+----------+----------+-----------+------+----------+---------+
+    |     1029|  11803269|  6.860 us|  78.692 ms|  1029|  11803269|       no|
+    +---------+----------+----------+-----------+------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+----------+-----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles)  | Iteration |  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |    max   |  Latency  |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+----------+-----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_325_3  |        0|  11802240|  9 ~ 16392|          -|          -|  0 ~ 720|        no|
+        +--------------------+---------+----------+-----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303]   --->   Operation 6 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lut_0 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:307]   --->   Operation 7 'alloca' 'lut_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%lut_0_1 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:307]   --->   Operation 8 'alloca' 'lut_0_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%lut_0_2 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:307]   --->   Operation 9 'alloca' 'lut_0_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%lut_0_3 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:307]   --->   Operation 10 'alloca' 'lut_0_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%lut_1 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:308]   --->   Operation 11 'alloca' 'lut_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%lut_1_1 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:308]   --->   Operation 12 'alloca' 'lut_1_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%lut_1_2 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:308]   --->   Operation 13 'alloca' 'lut_1_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%lut_1_3 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:308]   --->   Operation 14 'alloca' 'lut_1_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%lut_2 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:309]   --->   Operation 15 'alloca' 'lut_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%lut_2_1 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:309]   --->   Operation 16 'alloca' 'lut_2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lut_2_2 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:309]   --->   Operation 17 'alloca' 'lut_2_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%lut_2_3 = alloca i64 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:309]   --->   Operation 18 'alloca' 'lut_2_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln0 = call void @Gamma_Pipeline_VITIS_LOOP_315_1, i10 %lut_2_3, i10 %lut_2_2, i10 %lut_2_1, i10 %lut_2, i10 %lut_1_3, i10 %lut_1_2, i10 %lut_1_1, i10 %lut_1, i10 %lut_0_3, i10 %lut_0_2, i10 %lut_0_1, i10 %lut_0, i16 %gamma_lut_0, i16 %gamma_lut_1, i16 %gamma_lut_2"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln303 = store i10 0, i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303]   --->   Operation 20 'store' 'store_ln303' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height, void "   --->   Operation 21 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width, void "   --->   Operation 22 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %gamma_lut_2, i64 666, i64 207, i64 1"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %gamma_lut_1, i64 666, i64 207, i64 1"   --->   Operation 24 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %gamma_lut_0, i64 666, i64 207, i64 1"   --->   Operation 25 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgGamma, void @empty_12, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i120 %imgRgb, void @empty_12, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gamma_lut_2, void @empty_7, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gamma_lut_1, void @empty_7, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %gamma_lut_0, void @empty_7, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%width_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %width" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:311]   --->   Operation 31 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%empty = trunc i16 %width_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:311]   --->   Operation 32 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.ap_auto.i16P0A, i16 %height" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:312]   --->   Operation 33 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%empty_90 = trunc i16 %height_read" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:312]   --->   Operation 34 'trunc' 'empty_90' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/2] (0.00ns)   --->   "%call_ln0 = call void @Gamma_Pipeline_VITIS_LOOP_315_1, i10 %lut_2_3, i10 %lut_2_2, i10 %lut_2_1, i10 %lut_2, i10 %lut_1_3, i10 %lut_1_2, i10 %lut_1_1, i10 %lut_1, i10 %lut_0_3, i10 %lut_0_2, i10 %lut_0_1, i10 %lut_0, i16 %gamma_lut_0, i16 %gamma_lut_1, i16 %gamma_lut_2"   --->   Operation 35 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln325 = br void %VITIS_LOOP_327_4" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 36 'br' 'br_ln325' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.31>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%y_1 = load i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 37 'load' 'y_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (1.73ns)   --->   "%icmp_ln325 = icmp_eq  i10 %y_1, i10 %empty_90" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 38 'icmp' 'icmp_ln325' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 720, i64 0"   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (1.73ns)   --->   "%y_2 = add i10 %y_1, i10 1" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 40 'add' 'y_2' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln325 = br i1 %icmp_ln325, void %VITIS_LOOP_327_4.split, void %for.end99.loopexit" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 41 'br' 'br_ln325' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%empty_91 = wait i32 @_ssdm_op_Wait"   --->   Operation 42 'wait' 'empty_91' <Predicate = (!icmp_ln325)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.58ns)   --->   "%store_ln303 = store i10 %y_2, i10 %y" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303]   --->   Operation 43 'store' 'store_ln303' <Predicate = (!icmp_ln325)> <Delay = 1.58>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%ret_ln348 = ret" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:348]   --->   Operation 44 'ret' 'ret_ln348' <Predicate = (icmp_ln325)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.31>
+ST_4 : Operation 45 [2/2] (3.31ns)   --->   "%call_ln311 = call void @Gamma_Pipeline_VITIS_LOOP_327_4, i10 %empty, i120 %imgRgb, i10 %lut_1, i10 %lut_2, i10 %lut_0, i10 %lut_1_1, i10 %lut_2_1, i10 %lut_0_1, i10 %lut_1_2, i10 %lut_2_2, i10 %lut_0_2, i10 %lut_1_3, i10 %lut_2_3, i10 %lut_0_3, i120 %imgGamma" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:311]   --->   Operation 45 'call' 'call_ln311' <Predicate = true> <Delay = 3.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%specloopname_ln325 = specloopname void @_ssdm_op_SpecLoopName, void @empty_23" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 46 'specloopname' 'specloopname_ln325' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/2] (0.00ns)   --->   "%call_ln311 = call void @Gamma_Pipeline_VITIS_LOOP_327_4, i10 %empty, i120 %imgRgb, i10 %lut_1, i10 %lut_2, i10 %lut_0, i10 %lut_1_1, i10 %lut_2_1, i10 %lut_0_1, i10 %lut_1_2, i10 %lut_2_2, i10 %lut_0_2, i10 %lut_1_3, i10 %lut_2_3, i10 %lut_0_3, i120 %imgGamma" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:311]   --->   Operation 47 'call' 'call_ln311' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln325 = br void %VITIS_LOOP_327_4" [D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325]   --->   Operation 48 'br' 'br_ln325' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.667ns, clock uncertainty: 1.800ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	'alloca' operation 10 bit ('y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303) [8]  (0.000 ns)
+	'store' operation 0 bit ('store_ln303', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303) of constant 0 on local variable 'y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303 [36]  (1.588 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 3.319ns
+The critical path consists of the following:
+	'load' operation 10 bit ('y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325) on local variable 'y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303 [39]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln325', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325) [40]  (1.731 ns)
+	'store' operation 0 bit ('store_ln303', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303) of variable 'y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:325 on local variable 'y', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:303 [48]  (1.588 ns)
+
+ <State 4>: 3.319ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln311', D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_gamma_lut_0_0_synth_1/prj/sol/.autopilot/db/v_gamma_lut.cpp:311) to 'Gamma_Pipeline_VITIS_LOOP_327_4' [47]  (3.319 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

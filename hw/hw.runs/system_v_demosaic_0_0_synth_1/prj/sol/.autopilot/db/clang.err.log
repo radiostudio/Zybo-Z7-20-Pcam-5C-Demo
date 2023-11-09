@@ -1,0 +1,7 @@
+D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:102:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=width
+                      ^
+D:/Project2023/SG-Extended/ZyboOrg/hw/hw.runs/system_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:104:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=height
+                      ^
+2 warnings generated.
